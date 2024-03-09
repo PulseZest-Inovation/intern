@@ -44,13 +44,15 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <form id="searchForm" class="d-flex" role="search">
+          <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          
+          <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
+
 
   <div class="container">
     <div class="row">
@@ -189,8 +191,40 @@
     </div>
   </div>
 
+
   <!-- Scroll-to-top button -->
   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
+  <footer class="footer" style="background-color: #5c2d81; color: #ffffff;">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae fermentum libero.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: #ffffff;">Home</a></li>
+                    <li><a href="#" style="color: #ffffff;">About</a></li>
+                    <li><a href="#" style="color: #ffffff;">Services</a></li>
+                    <li><a href="#" style="color: #ffffff;">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>Email: example@example.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>Address: 123 Street, City, Country</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3" style="background-color: #194664;">
+        &copy; 2024 PulseZest. All rights reserved.
+    </div>
+</footer>
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -202,6 +236,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script>
+ 
     // Scroll-to-top button
     window.onscroll = function () { scrollFunction() };
 

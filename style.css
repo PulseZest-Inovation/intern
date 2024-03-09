@@ -1,242 +1,129 @@
-<<<<<<< HEAD
+
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
 
-  .card {
-    width: 18rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    text-align: left;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    margin-left: 5px; /* Shift cards slightly to the left */
-  }
-  
+.card {
+  width: 18rem;
+  transition: transform 0.3s ease;
+}
 
-  .fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 0.5s ease forwards;
-  }
+.card:hover {
+  transform: scale(1.05);
+}
 
-  @keyframes fadeInAnimation {
-    from {
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: left;
+}
+
+.card {
+  margin-left: 5px; /* Shift cards slightly to the left */
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
       opacity: 0;
       transform: translateY(20px);
-    }
+  }
 
-    to {
+  to {
       opacity: 1;
       transform: translateY(0);
-    }
   }
+}
 
-  .carousel-item img {
-    max-height: 300px;
-    object-fit: cover;
-  }
+.carousel-item img {
+  max-height: 300px;
+  object-fit: cover;
+}
 
-  /* Additional styles */
-  .feature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-  }
+/* Custom CSS for the feature section */
+.feature {
+  padding: 50px 0;
+  border: 2px solid #000000; /* Add border with a light gray color */
+  border-radius: 10px; /* Add rounded corners */
+}
 
-  .feature-icon {
-    font-size: 3rem;
-    color: #007bff;
-  }
 
-  .feature-description {
-    margin-top: 20px;
-  }
 
-  .page-fold {
-    overflow: hidden;
-    position: relative;
-  }
+.feature .feature-title {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #f700d6ee; /* Dark color */
+}
 
-  .page-fold img {
-    transition: transform 0.8s ease;
-    transform-origin: top;
-    width: 100%;
-  }
+.feature .feature-description {
+  font-size: 1rem;
+  color: #0400ff; /* Medium color */
+}
 
-  .page-fold.folded img {
-    transform: perspective(1200px) rotateX(-180deg);
-  }
+/* Hover effect for feature items */
+.feature .col-md-4:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px orange;
+}
 
-  /* Navbar animation */
-  .navbar-nav li:hover>a {
-    color: #007bff;
-    transition: color 0.3s;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .feature .col-md-4 {
+    margin-bottom: 30px;
   }
+}
 
-  /* Scroll-to-top button */
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-  }
+.page-fold {
+  overflow: hidden;
+  position: relative;
+}
 
-  #scrollToTopBtn:hover {
-    background-color: #0056b3;
-=======
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
+.page-fold img {
+  transition: transform 0.8s ease;
+  transform-origin: top;
+  width: 100%;
+}
 
-  .card {
-    width: 18rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card img {
-    max-height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    text-align: left;
-  }
-  
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    margin-left: 5px; /* Shift cards slightly to the left */
-  }
-  
+.page-fold.folded img {
+  transform: perspective(1200px) rotateX(-180deg);
+}
 
-  .fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 0.5s ease forwards;
-  }
+/* Navbar animation */
+.navbar-nav li:hover>a {
+  color: #007bff;
+  transition: color 0.3s;
+}
 
-  @keyframes fadeInAnimation {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
+/* Scroll-to-top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
 
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
 
-  .carousel-item img {
-    max-height: 300px;
-    object-fit: cover;
-  }
-
-  /* Additional styles */
-  .feature {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px 0;
-  }
-
-  .feature-icon {
-    font-size: 3rem;
-    color: #007bff;
-  }
-
-  .feature-description {
-    margin-top: 20px;
-  }
-
-  .page-fold {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .page-fold img {
-    transition: transform 0.8s ease;
-    transform-origin: top;
-    width: 100%;
-  }
-
-  .page-fold.folded img {
-    transform: perspective(1200px) rotateX(-180deg);
-  }
-
-  /* Navbar animation */
-  .navbar-nav li:hover>a {
-    color: #007bff;
-    transition: color 0.3s;
-  }
-
-  /* Scroll-to-top button */
-  #scrollToTopBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-  }
-
-  #scrollToTopBtn:hover {
-    background-color: #0056b3;
->>>>>>> eab945abbfed4a1844bd6318797538c9e4d4c465
-  }
