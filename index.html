@@ -5,6 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PulseZest</title>
+  <style>
+    body {
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    .dark-mode {
+        background-color: rgb(61, 61, 61);
+        color: white;
+    }
+    .light-mode {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+</style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -15,6 +30,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">PulseZest</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -24,6 +40,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
@@ -44,11 +61,13 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
+        
         <form id="searchForm" class="d-flex" role="search">
           <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           
           <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
         </form>
+        
       </div>
     </div>
   </nav>
@@ -70,6 +89,7 @@
           </div>
         </a>
       </div>
+      
       <div class="carousel-item">
         <a href="https://learning.pulsezest.com/courses/mission-javascript-in-20-days/">
           <div class="page-fold">
@@ -132,6 +152,17 @@
       <div class="col">
         <!-- Card 1: How to Use Firebase? -->
         <div class="card fade-in" style="width: 18rem;">
+          <img src="images/python.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Basic Python in 8 Hours </h5>
+            <p class="card-text">Learn Python in just 8 hours with the best teachers of PulseZest</p>
+            <a href="https://learning.pulsezest.com/courses/learning-firebase/" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <!-- Card 1: How to Use Firebase? -->
+        <div class="card fade-in" style="width: 18rem;">
           <img src="images/firbease.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">How to Use Firebase?</h5>
@@ -189,11 +220,17 @@
         </div>
       </div>
     </div>
+    <div class="dark">
+      <button id="darkModeToggle"> <img src="Dark.png" width="20"> </button>          
+      <script src="script.js"></script>
+  
+    </div>
   </div>
 
 
   <!-- Scroll-to-top button -->
   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
+  
   <footer class="footer" style="background-color: #5c2d81; color: #ffffff;">
     <div class="container py-5">
         <div class="row">
@@ -223,6 +260,8 @@
     <div class="text-center py-3" style="background-color: #194664;">
         &copy; 2024 PulseZest. All rights reserved.
     </div>
+    
+    
 </footer>
 
 

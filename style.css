@@ -127,3 +127,15 @@
   background-color: #0056b3;
 }
 
+
+
+.dark-mode {
+  background-color: rgb(75, 73, 73);
+  color: white;
+}
+
+.dark{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
