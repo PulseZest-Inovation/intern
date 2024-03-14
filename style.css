@@ -127,17 +127,15 @@
   background-color: #0056b3;
 }
 
-.body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
+
+
 .dark-mode {
-  background-color: black;
+  background-color: rgb(75, 73, 73);
   color: white;
 }
-.light-mode {
-  background-color: white;
-  color: black;
+
+.dark{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
 }
