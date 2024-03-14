@@ -5,6 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PulseZest</title>
+  <style>
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    .light-mode {
+        background-color: white;
+        color: black;
+    }
+</style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
@@ -70,6 +86,7 @@
           </div>
         </a>
       </div>
+      
       <div class="carousel-item">
         <a href="https://learning.pulsezest.com/courses/mission-javascript-in-20-days/">
           <div class="page-fold">
@@ -129,6 +146,17 @@
 
   <div class="container overflow-hidden text-center">
     <div class="row gx-6">
+      <div class="col">
+        <!-- Card 1: How to Use Firebase? -->
+        <div class="card fade-in" style="width: 18rem;">
+          <img src="images/python.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Basic Python in 8 Hours </h5>
+            <p class="card-text">Learn Python in just 8 hours with the best teachers of PulseZest</p>
+            <a href="https://learning.pulsezest.com/courses/learning-firebase/" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
       <div class="col">
         <!-- Card 1: How to Use Firebase? -->
         <div class="card fade-in" style="width: 18rem;">
@@ -223,6 +251,23 @@
     <div class="text-center py-3" style="background-color: #194664;">
         &copy; 2024 PulseZest. All rights reserved.
     </div>
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Dark Mode</button>
+    <button onclick="lightMode()">Light Mode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
 </footer>
 
 
