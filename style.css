@@ -34,6 +34,7 @@
   animation: fadeInAnimation 0.5s ease forwards;
 }
 
+
 @keyframes fadeInAnimation {
   from {
       opacity: 0;
@@ -46,10 +47,19 @@
   }
 }
 
-.carousel-item img {
-  max-height: 300px;
+.carousel-item:nth-child(1) img {
+  max-height: 300px; /* Set the maximum height for the first photo */
   object-fit: cover;
 }
+
+.carousel-item:nth-child(2) img {
+  max-height: 300px; /* Set the maximum height for the second photo */
+}
+
+.carousel-item:nth-child(3) img {
+  max-height: 300px; /* Set the maximum height for the third photo */
+}
+
 
 /* Custom CSS for the feature section */
 .feature {
@@ -63,19 +73,19 @@
 .feature .feature-title {
   font-size: 1.5rem;
   margin-top: 20px;
-  color: #f700d6ee; /* Dark color */
+  color: #012529ee; /* Dark color */
 }
 
 .feature .feature-description {
   font-size: 1rem;
-  color: #0400ff; /* Medium color */
+  color: #5f3f09; /* Medium color */
 }
 
 /* Hover effect for feature items */
 .feature .col-md-4:hover {
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  box-shadow: 0px 5px 15px orange;
+  box-shadow: 0px 5px 15px rgb(129, 84, 0);
 }
 
 /* Media query for smaller screens */
@@ -130,7 +140,7 @@
 
 
 .dark-mode {
-  background-color: rgb(75, 73, 73);
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -139,3 +149,65 @@
   left: 20px;
   bottom: 20px;
 }
+/* About Us Section Start */
+
+.Sub-header {
+  height: 55vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(14, 37, 132, 0.7)), 
+  url(img/banner.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  
+}
+
+.Sub-header h1 {
+  margin-top: 100px;
+}
+
+
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-col {
+  flex-basis: 48%;
+  padding: 70px 5px;
+}
+
+.about-col img {
+  width: 100%;
+}
+
+.about-col h1 {
+  padding-top: 0;
+}
+
+.about-col p {
+  padding: 15px 0 25px;
+  color: #000000;
+  font-size: 100%;
+  text-align: justify;
+}
+
+.btn {
+  border: 1px solid #1c1540;
+  background: transparent;
+  color: #5236f4;
+}
+
+.small-logo {
+  width: 50px; /* Adjust the width as per your preference */
+  height: auto; /* Maintain aspect ratio */
+}
+/* CSS to style the logo */
+.logo {
+  max-width: 200px; /* Set the maximum width for the logo */
+  max-height: 100px; /* Set the maximum height for the logo */
+}
+
