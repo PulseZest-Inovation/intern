@@ -154,8 +154,7 @@
 .Sub-header {
   height: 55vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(14, 37, 132, 0.7)), 
-  url(img/banner.png);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(14, 37, 132, 0.7));
   background-position: center;
   background-size: cover;
   text-align: center;
