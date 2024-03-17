@@ -13,9 +13,14 @@
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">PulseZest</a>
+      <a href="#" class="navbar-brand">
+        <img src="images/logo.png" alt="Your Logo" class="logo" style="width: 70px;"> <span>PulseZest</span>
+      
+    </a>
+    
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,15 +48,20 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/team.html">Team</a>
+            </li>
         </ul>
         
         <form id="searchForm" class="d-flex" role="search">
           <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           
           <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+          
         </form>
         
       </div>
@@ -66,42 +76,44 @@
   </div>
 
   <!-- Carousel for Featured Courses -->
-  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="https://learning.pulsezest.com/courses/lean-basics-of-github/">
-          <div class="page-fold">
-            <img src="images/git.png" class="d-block w-100" alt="...">
-          </div>
-        </a>
-      </div>
-      
-      <div class="carousel-item">
-        <a href="https://learning.pulsezest.com/courses/mission-javascript-in-20-days/">
-          <div class="page-fold">
-            <img src="images/carousel-2.png" class="d-block w-100" alt="...">
-          </div>
-        </a>
-      </div>
-      <div class="carousel-item">
-        <a href="https://learning.pulsezest.com/courses/">
-          <div class="page-fold">
-            <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </a>
-      </div>
+  <!-- Carousel for Featured Courses -->
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://learning.pulsezest.com/courses/lean-basics-of-github/">
+        <div class="page-fold">
+          <img src="images/git.png" class="d-block w-100" alt="...">
+        </div>
+      </a>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    
+    <div class="carousel-item">
+      <a href="https://learning.pulsezest.com/courses/mission-javascript-in-20-days/">
+        <div class="page-fold">
+          <img src="images/carousel-2.png" class="d-block w-100" alt="...">
+        </div>
+      </a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://learning.pulsezest.com/courses/">
+        <div class="page-fold">
+          <img src="images/carousel-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </a>
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 
 
   <div class="feature bg-light">
@@ -152,8 +164,7 @@
           <img src="images/firbease.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">How to Use Firebase?</h5>
-            <p class="card-text">Learn Firebase using Flutter Dart and JavaScript. Performing all the CRUD operations
-              with Real and Cloud Storage.</p>
+            <p class="card-text">Learn Firebase using Flutter Dart and JavaScript. Performing all the CRUD operations with Real and Cloud Storage.</p>
             <a href="https://learning.pulsezest.com/courses/learning-firebase/" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
@@ -202,6 +213,7 @@
             <p class="card-text">Master React and build powerful web applications.</p>
             <a href="https://learning.pulsezest.com/courses/react-basic-to-advacne/" class="btn btn-primary">Buy Now</a>
           </div>
+          
 
         </div>
       </div>
@@ -217,15 +229,15 @@
   <!-- Scroll-to-top button -->
   <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
   
-  <footer class="footer" style="background-color: #5c2d81; color: #ffffff;">
+  <footer class="footer" style="background-color: #373abe; color: #ffffff;">
     <div class="container py-5">
         <div class="row">
             <div class="col-md-4">
-                <h5>About Us</h5>
+                <h5><b>~About Us~</b></h5>
                 <p>Introducing the exceptional team at PulseZest, where creativity meets security to deliver outstanding Android software, web pages, web portals and many Business Solutions.</p>
             </div>
             <div class="col-md-4">
-                <h5>Quick Links</h5>
+                <h5><b>~Quick Links~</b></h5>
                 <ul class="list-unstyled">
                     <li><a href="#" style="color: #ffffff;">Home</a></li>
                     <li><a href="#" style="color: #ffffff;">About</a></li>
@@ -234,19 +246,26 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <h5>Contact Us</h5>
+                <h5><b>~Contact Us~</b></h5>
                 <ul class="list-unstyled">
                     <li>Email: contact@pulsezest.com</li>
                     <li>Phone: +91-5813554123</li>
-                    <li>Address: Pashupati  vihar colony,  bareilly ,U.P.</li>
+                    <li>Address: Pashupati Vihar Colony, Bareilly, U.P</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="text-center py-3" style="background-color: #194664;">
+    <div class="text-center py-3" style="background-color: #373abe;">
         &copy; 2024 PulseZest. All rights reserved.
     </div>
-    
+   
+    <div class="container">
+      <div class="row">
+        <div class="col" style="height: 20px;"></div>
+      </div>
+    </div>
+  
+  
     
 </footer>
 
