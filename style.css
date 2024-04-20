@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  background-color: #0056b3;
 }
 
 .card {
@@ -117,21 +118,7 @@
 }
 
 /* Scroll-to-top button */
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
+
 
 #scrollToTopBtn:hover {
   background-color: #0056b3;
@@ -225,11 +212,11 @@
   
   }
   
-  .nafees{
+  .foot{
   margin-top: 20px;
   }
   
-  .nafees a{
+  .foot a{
     display: block;
     font-size: 0.85rem;
     margin:10px;
