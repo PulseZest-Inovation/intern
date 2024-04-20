@@ -234,17 +234,11 @@
   
   
   }
-  .logo{
-      background-image: url("logo.png");
-      background-size:cover;
-      height: 50px;
-      width: 100px;
-  }
   
   .foot_panel4{
       background-color: #0F1111;
       color:white;
-      height: 80px;
+      height: 40px;
       font-size: 0.7rem;
       text-align: center;
       
