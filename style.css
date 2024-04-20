@@ -206,7 +206,7 @@
   .foot_panel2{
       background-color: #222f3d;
       color: white;
-      height: 500px;
+      height: 200px;
       display: flex;
       justify-content: space-evenly;
   
@@ -227,7 +227,7 @@
       background-color: #222f3d;
       color: white;
       border-top:0.5px solid white;
-      height: 70px;
+      height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
