@@ -188,6 +188,12 @@
   background: transparent;
   color: #5236f4;
 }
+
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
 .footer{
   margin-top: 15px;
   
@@ -200,13 +206,13 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 0.80rem;
   
   } 
   .foot_panel2{
       background-color: #222f3d;
       color: white;
-      height: 200px;
+      height: 250px;
       display: flex;
       justify-content: space-evenly;
   
