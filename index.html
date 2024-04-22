@@ -13,7 +13,9 @@
 </head>
 
 <body>
-  
+  <div id="content">
+    
+  <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a href="#" class="navbar-brand">
@@ -67,6 +69,7 @@
       </div>
     </div>
   </nav>
+</header>
 
 
   <div class="container">
@@ -226,50 +229,59 @@
   </div>
 
 
-  <!-- Scroll-to-top button -->
-  <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
-  
-  <footer class="footer" style="background-color: #373abe; color: #ffffff;">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-4">
-                <h5><b>~About Us~</b></h5>
-                <p>Introducing the exceptional team at PulseZest, where creativity meets security to deliver outstanding Android software, web pages, web portals and many Business Solutions.</p>
-            </div>
-            <div class="col-md-4">
-                <h5><b>~Quick Links~</b></h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" style="color: #ffffff;">Home</a></li>
-                    <li><a href="#" style="color: #ffffff;">About</a></li>
-                    <li><a href="#" style="color: #ffffff;">Services</a></li>
-                    <li><a href="#" style="color: #ffffff;">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5><b>~Contact Us~</b></h5>
-                <ul class="list-unstyled">
-                    <li>Email: contact@pulsezest.com</li>
-                    <li>Phone: +91-5813554123</li>
-                    <li>Address: Pashupati Vihar Colony, Bareilly, U.P</li>
-                </ul>
-            </div>
+  <footer>
+    <div class="foot_panel2">
+        <ul class="foot">
+             <p class="cursor">~About Us~</p>
+             <a>Introducing the exceptional team at PulseZest
+               where creativity meets security to deliver 
+               outstanding Android software</a>
+               <a>web pages</a>  
+               <a>web portals and many Business Solutions</a>
+             
+        </ul>
+        
+        <ul class="foot">
+        <p class="cursor">~Quick Links~</p>
+            <a>Home</a>
+            <a> About</a>
+            <a>Services</a>
+            <a>Contact</a>
+        </ul>
+      
+
+        <ul class="foot">
+        <p class="cursor">~Contact Us~</p>
+        <a>Email: contact@pulsezest.com</a>
+        <a> Phone: +91-5813554123</a>
+        <a>Address: Pashupati Vihar Colony, Bareilly,up</a>
+   </ul >
+ 
+   <ul class="foot">
+    <p class="cursor">~Related Content~</p>
+    <a>Chrome for Developers</a>
+    <a>Chromium updates</a>
+    <a>Case studies</a>
+    
+</ul>
+</div>
+    <div class="foot_panel4">
+        <div class="pages">
+            <a>condition of use</a>
+            <a>privacy notice</a>
+            <a>yourads privacy choices</a>
+        </div>
+        <div class="copyright">
+            © 2024 PulseZest. All rights reserved
         </div>
     </div>
-    <div class="text-center py-3" style="background-color: #373abe;">
-        &copy; 2024 PulseZest. All rights reserved.
-    </div>
-   
-    <div class="container">
-      <div class="row">
-        <div class="col" style="height: 20px;"></div>
-      </div>
-    </div>
-  
-  
-    
 </footer>
 
 
+<button onclick="scrollToTop()" id="btnBackToTop" title="Go to top">Top</button>
+
+<script src="script.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -279,24 +291,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script>
- 
-    // Scroll-to-top button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("scrollToTopBtn").style.display = "block";
-      } else {
-        document.getElementById("scrollToTopBtn").style.display = "none";
-      }
-    }
-
-    function scrollToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
+  
+  </div>
 </body>
 
 </html>

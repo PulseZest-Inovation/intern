@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  background-color: #0056b3;
 }
 
 .card {
@@ -117,21 +118,7 @@
 }
 
 /* Scroll-to-top button */
-#scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-}
+
 
 #scrollToTopBtn:hover {
   background-color: #0056b3;
@@ -149,6 +136,8 @@
   left: 20px;
   bottom: 20px;
 }
+
+
 /* About Us Section Start */
 
 .Sub-header {
@@ -193,13 +182,84 @@
   font-size: 100%;
   text-align: justify;
 }
+ 
+  #btnBackToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  #btnBackToTop:hover {
+    background-color: #0056b3;
+  }
 
-.btn {
-  border: 1px solid #1c1540;
-  background: transparent;
-  color: #5236f4;
-}
 
+  /*  footer  */
+
+  .footer{
+    margin-top: 15px;
+    
+    }
+    
+   
+    .foot_panel2{
+        background-color: #222f3d;
+        color: white;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    .foot{
+    margin-top: 20px;
+    }
+    
+    .foot a{
+      display: block;
+      font-size: 0.85rem;
+      margin:10px;
+      color: #dddddd;
+    }
+    
+    .foot_panel3{
+        background-color: #222f3d;
+        color: white;
+        border-top:0.5px solid white;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+  
+    .foot_panel4{
+        background-color: #0F1111;
+        color:white;
+        height: 35px;
+        font-size: 0.6rem;
+        text-align: center;
+        
+    
+    }
+    
+  
+  
+  .cursor{
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
 .small-logo {
   width: 50px; /* Adjust the width as per your preference */
   height: auto; /* Maintain aspect ratio */
