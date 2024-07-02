@@ -209,3 +209,12 @@
   max-width: 200px; /* Set the maximum width for the logo */
   max-height: 100px; /* Set the maximum height for the logo */
 }
+
+.box_1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2rem;
+  line-height: normal;
+  cursor: pointer;
+}
+
+
